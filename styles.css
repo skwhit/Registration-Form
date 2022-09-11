@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
-    height: 100%;
+    min-height: 100vh;
 }
 .hero::before {
     content: "";
@@ -29,6 +29,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     opacity: .6;
+    min-height: 100vh;
 }
 h1, p {
     margin: 0 auto 2px auto;
@@ -92,4 +93,12 @@ input[type="submit"] {
     border-color: white;
     min-width: 300px;
     border-radius: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
 }
